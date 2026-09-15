@@ -2,6 +2,7 @@ import streamlit as st
 from ultralytics import YOLO
 from PIL import Image
 import numpy as np
+from pathlib import Path
 
 # --------------------------------------------------
 # PAGE CONFIGURATION
@@ -81,8 +82,7 @@ st.divider()
 # --------------------------------------------------
 
 MODEL_PATH = (
-    "runs/detect/runs/detect/"
-    "protein_nucleus_test/weights/best.pt"
+     Path("models/best.pt")
 )
 
 model = YOLO(MODEL_PATH)
