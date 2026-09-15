@@ -1,0 +1,61 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+
+# --------------------------------------------------
+# Original raw dataset archives
+# Keep these locally, but don't upload to GitHub
+# --------------------------------------------------
+dataset/raw/images/images.zip
+dataset/raw_images/masks/masks.zip
+
+# Original raw dataset folders
+dataset/raw/
+dataset/raw_images/
+
+# --------------------------------------------------
+# Repeated/generated YOLO prediction folders
+# --------------------------------------------------
+runs/detect/results/
+runs/detect/results-*/
+runs/detect/val-*/
+
+# YOLO cache files
+*.cache
+
+# YOLO cache files
+*.cache
+
+# Python virtual environment
+.venv/
+
+# Generated checking results
+results/
+
+# Processed dataset - keep locally, don't upload
+dataset/images/
+dataset/labels/
+
+# Training outputs - keep locally, don't upload
+runs/
+
+# Generated checking images
+mask_check.png
+mask_visible.png
